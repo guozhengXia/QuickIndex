@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guozheng.quickindex.MainActivity">
+
+    <ExpandableListView
+        android:id="@+id/address_expandable_listview"
+        android:groupIndicator="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none"/>
+    <com.guozheng.quickindex.view.QuickIndexBar
+        android:id="@+id/quick_index_bar"
+        android:layout_width="26dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shap_bg_text_dialog"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
